@@ -3,6 +3,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #48d9c0;
+  padding: 30px;
 }
 
 .title {
@@ -49,7 +50,7 @@ h4 > span {
 .choices {
   display: flex;
   flex-direction: column;
-  margin-left: 226px;
+  margin-left: 20%;
   margin-bottom: 24px;
 }
 
@@ -57,7 +58,7 @@ h4 > span {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  margin-left: 205px;
+  margin-left: 20%;
   margin-bottom: 24px;
 }
 
@@ -75,4 +76,14 @@ h4 > span {
 
 .new {
   background-color: #9fb3af;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
 }

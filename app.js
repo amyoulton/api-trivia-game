@@ -18,7 +18,9 @@ getTrivia().then((data) => {
   console.log(results);
   document.getElementById('question').innerHTML = results.question;
   document.getElementById('category').innerHTML = results.category;
-  document.getElementById('difficulty').innerHTML = results.difficulty;
+  const difficulty =
+    results.difficulty[0].toUpperCase() + results.difficulty.substring(1);
+  document.getElementById('difficulty').innerHTML = difficulty;
   const answers = [...results.incorrect_answers, results.correct_answer];
   shuffleArray(answers);
   for (let i = 0; i < 4; i++) {
